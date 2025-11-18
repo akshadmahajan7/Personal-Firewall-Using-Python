@@ -1,0 +1,46 @@
+{
+    "default_policy": "DENY",
+    "rules": [
+        {
+            "id": 1,
+            "action": "ALLOW",
+            "protocol": "TCP",
+            "dst_port": 80,
+            "description": "Allow all Outgoing HTTP Web Traffic"
+        },
+        {
+            "id": 2,
+            "action": "ALLOW",
+            "protocol": "TCP",
+            "dst_port": 443,
+            "description": "Allow all Outgoing HTTPS Encrypted Web Traffic"
+        },
+        {
+            "id": 3,
+            "action": "ALLOW",
+            "protocol": "UDP",
+            "dst_port": 53,
+            "description": "Allow all Outgoing DNS Queries"
+        },
+        {
+            "id": 4,
+            "action": "DENY",
+            "protocol": "TCP",
+            "src_ip": "10.0.0.5",
+            "description": "BLOCK: Specific Untrusted Internal IP"
+        },
+        {
+            "id": 5,
+            "action": "DENY",
+            "protocol": "TCP",
+            "dst_port": 22,
+            "description": "BLOCK: All Outgoing SSH Attempts"
+        },
+        {
+            "id": 6,
+            "action": "ALLOW",
+            "protocol": "ICMP",
+            "description": "Allow Basic Ping/ICMP Traffic"
+        }
+    ]
+}

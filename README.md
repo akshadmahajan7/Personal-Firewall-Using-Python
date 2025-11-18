@@ -23,6 +23,19 @@ To run and develop this project, you will need the following:
 
 ---
 
+## 📁 Project Structure
+```
+Python-Personal-Firewall/
+├── firewall.py               # 🛡️ Core Engine: Sniffing, Rule Matching, Logging, and iptables Enforcement.
+├── firewall_gui.py           # 🖥️ GUI Monitor: Tkinter interface for control and live log viewing.
+├── rules.json                # ⚙️ Configuration: Defines the firewall rules.
+├── firewall.log              # 📝 Audit trail for blocked packets (generated at runtime).
+├── README.md                 # 📖 Project documentation (as previously discussed).
+└── LICENSE                   # Legal licensing file.
+```
+
+---
+
 ## 🛠️ Installation
 1. Clone the repository:
 ```bash

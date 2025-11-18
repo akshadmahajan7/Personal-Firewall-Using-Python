@@ -66,6 +66,10 @@ sudo python firewall.py
 #Run the script:
 python firewall.py
 ```
+4.Install dependencies using requirements.txt
+```bash
+pip install -r requirements.txt
+```
 
 ---
 

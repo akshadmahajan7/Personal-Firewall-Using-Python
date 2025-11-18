@@ -1,0 +1,6 @@
+scapy
+# Tkinter is usually included with standard Python installations, 
+# but including it can ensure its presence if packaging tools are used.
+# If you run into issues installing the 'tk' library on Linux, 
+# you might need to install 'python3-tk' via your package manager (e.g., apt-get).
+tk
